@@ -44,8 +44,8 @@ if (not(os.path.exists('./DBL_alpha.hmm') and
 print "Welcome to the PfEMP1 DBL domain classifier"
 print "Currently supports alpha and alpha_1 DBL domains"
 # Get DBL sequence file
-#file = raw_input("Please enter your domain file: ")
-file = 'all_DBL_domains'
+#file = 'all_DBL_domains'
+file = raw_input("Please enter your domain file: ")
 # Check file against hmms with hmmer
 os.system('hmmsearch DBL_alpha.hmm ' + file + ' > a.out')
 os.system('hmmsearch DBL_alpha_1.hmm ' + file + ' > a1.out')
